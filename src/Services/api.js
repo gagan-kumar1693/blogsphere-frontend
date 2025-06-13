@@ -18,4 +18,9 @@ export const createBlog = (blogData) => {
   return API.post("/blogs", blogData);
 };
 
+export const loginUser = (credentials) => {
+  return API.post("/users/login", credentials);
+};
+
+
 export default API;
